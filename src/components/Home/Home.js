@@ -10,7 +10,7 @@ const Home = () => {
         fetch(url)
         .then(res=>res.json())
         .then(data=>setPosts(data))
-    })
+    },[])
 
     return (
         <div>
