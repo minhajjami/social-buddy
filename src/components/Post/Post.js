@@ -29,7 +29,7 @@ const Post = (props) => {
     const classes = useStyles();
     const { title, body, id } = props.post;
     return (
-        <Box mt={8} mb={3} ml={25} mr={25}>
+        <Box mt={8} mb={3} ml={25} mr={25} style={{borderLeft:'2.5px solid #673ab7'}}>
             <Card className={classes.root} variant="outlined">
                 <CardContent>
                     <Typography variant="h4" component="h2" color="textPrimary" gutterBottom>
@@ -40,7 +40,7 @@ const Post = (props) => {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Link to={`/post/${id}`}><Button variant="contained" color="primary" size="small">Read More</Button></Link>
+                    <Link to={`/post/${id}`}><Button variant="contained" color="secondary" size="small">See More</Button></Link>
                 </CardActions>
             </Card>
         </Box>

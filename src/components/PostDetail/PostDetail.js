@@ -29,7 +29,7 @@ const PostDetail = () => {
 
     return (
         <div>
-            <Box mt={8} mb={3} ml={25} mr={25}>
+            <Box mt={8} mb={3} ml={25} mr={25} style={{borderBottom:'2px solid #673ab7'}}>
                 <Card >
                     <CardContent>
                         <Typography variant="h4" component="h2" color="textPrimary" gutterBottom>

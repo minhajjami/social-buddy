@@ -38,8 +38,9 @@ const Comment = (props) => {
                         <Avatar src={userImage.large}></Avatar>
                     </Grid>
                     <Grid item xs>
-                        <Typography fontWeight={500}>{name} {email}</Typography>
-                        <Typography>{body}</Typography>
+                        <Typography variant="h5" component="h5">{name} </Typography>
+                        <Typography variant="h5" component="h5">{email} </Typography>
+                        <Typography  color="textSecondary">{body}</Typography>
                     </Grid>
                 </Grid>
             </Paper>
